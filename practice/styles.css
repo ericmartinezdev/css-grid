@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: #f9f1f0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: var(--main-background-color);
+}
+
+.container {
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: auto 1fr auto;
+}
+
+.content {
+  background: #fff;
+}
+
+.header {
+  border: 3px solid orangered;;
+}
+
+.main {
+  border: 3px solid orangered;
+}
+
+.footer {
+  border: 3px solid orangered;
+}
+
+.title {
+  margin: 0;
+}
