@@ -36,13 +36,17 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+  padding: 1.5em 0;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5em 0;
 }
 
 .logo {
@@ -75,6 +79,7 @@ p {
 
 .main {
   display: flex;
+  align-items: center;
 }
 
 .main__content {
@@ -128,6 +133,19 @@ p {
   color: var(--socials-color);
 }
 
+.socials {
+  display: flex;
+  gap: .8em;
+}
+
 .socials__item {
   color: var(--socials-color);
+}
+
+.socials__item:hover {
+  color: #333;
+}
+
+.header, .main, .footer {
+  border: 3px solid orangered;
 }
