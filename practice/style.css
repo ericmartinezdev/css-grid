@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: #f9f1f0;
+  --main-font-color: #333;
+  --header-color: #bdbdbd;
+  --nav-item-active: #333;
+  --nav-button-background-color: #8c92ac;
+  --nav-button-color: #fff;
+  --main-description-color: #828282;
+  --play-button-border-color: #e0e0e0;
+  --socials-color: #bdbdbd;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: var(--main-background-color);
+  color: var(--main-font-color);
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  max-width: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.5em;
+  flex-grow: 1;
+}
+
+.navigation__item {
+  text-decoration: none;
+  color: var(--header-color);
+  margin-left: 2.2em;
+}
+
+.navigation__item-active {
+  color: var(--nav-item-active);
+}
+
+.navigation__button {
+  border: none;
+  background: linear-gradient(165deg, #fff, var(--nav-button-background-color));
+  padding: .85em 2.1em;
+  border-radius: 50px;
+  color: var(--nav-button-color);
+}
+
+.main {
+  display: flex;
+}
+
+.main__content {
+  flex: 1;
+}
+
+.main__headline {
+  font-size: 3.125em;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.main__description {
+  color: var(--main-description-color);
+  margin: 0;
+  padding: 0;
+
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.play-button {
+  padding: .85em 2.2em;
+  border: 1px solid var(--play-button-border-color);
+  background: transparent;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(165deg, #fff, var(--nav-button-background-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.play-button .fa {
+  background: inherit;
+  font-size: 1.25rem;
+  margin-right: .3em;
+}
+
+.main__img {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  gap: 2.4em;
+  color: var(--socials-color);
+}
+
+.socials__item {
+  color: var(--socials-color);
+}
