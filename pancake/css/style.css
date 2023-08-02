@@ -13,14 +13,28 @@ h1 {
   margin: 0;
 }
 
-.header,
 .main,
-.footer {
+.aside {
   border: 3px solid orangered;
+  padding: 0;
+  margin: 0
 }
 
 .container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
   height: 100vh;
+
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+  align-items: center;
+}
+
+.main {
+  grid-column: 2 / 6;
+  min-height: 60%;
+}
+
+.aside {
+  grid-column: 6 / 12;
+  min-height: 60%;
 }
